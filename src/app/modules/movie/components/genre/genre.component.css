@@ -1,0 +1,12 @@
+.genre {
+  color: #f1ecec;
+}
+
+a {
+  text-decoration: none;
+  color: #f1ecec;
+}
+
+.active {
+  color: yellow;
+}

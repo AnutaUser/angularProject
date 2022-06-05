@@ -1,0 +1,6 @@
+<div class="movie">
+  <img src="https://image.tmdb.org/t/p/w200/{{movie.poster_path}}" alt="{{movie.original_title}}">
+  <h3><a routerLink="{{movie.id}}" [state]="{movie:movie}">{{movie.original_title}}</a></h3>
+  <h4>Rating: {{movie.popularity}}</h4>
+  <app-rating></app-rating>
+</div>

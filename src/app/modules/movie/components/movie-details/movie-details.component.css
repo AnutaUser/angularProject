@@ -1,0 +1,16 @@
+.movie-details {
+  color: #f1ecec;
+  margin-top: 30px;
+
+}
+
+img {
+  width: 900px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.details {
+  text-align: center;
+}

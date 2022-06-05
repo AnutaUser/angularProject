@@ -1,0 +1,14 @@
+<div class="main">
+  <div class="genres">
+    <app-genres></app-genres>
+  </div>
+
+  <div class="movies">
+    <app-movie *ngFor="let movie of movies" [movie]="movie"></app-movie>
+  </div>
+
+  <div class="button">
+    <button (click)="prevPage()" [disabled]='currentPage === 1'>prev</button>
+    <button (click)="nextPage(1)">next</button>
+  </div>
+</div>

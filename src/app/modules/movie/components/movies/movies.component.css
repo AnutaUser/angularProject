@@ -1,0 +1,19 @@
+.movies {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+  justify-content: center;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  background: #7e8079;
+  border-radius: 10px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 20px;
+}

@@ -1,0 +1,15 @@
+.movie {
+  width: 200px;
+  color: #f1ecec;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #f1ecec;
+}
+
+img {
+  border-radius: 10%;
+
+}
