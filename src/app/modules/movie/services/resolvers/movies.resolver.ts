@@ -12,14 +12,16 @@ import {IMovie} from "../../interfaces";
 @Injectable({
   providedIn: 'root'
 })
-export class MoviesResolver implements Resolve<IMovie[]> {
+export class MoviesResolver implements Resolve<{ page: number, results: IMovie[] }> {
 
   constructor(private movieService: MovieService) {
   }
 
-  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<IMovie[]> | Promise<IMovie[]> | IMovie[] {
+  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<{ page: number; results: IMovie[] }> | Promise<{ page: number; results: IMovie[] }> | { page: number; results: IMovie[] } {
     const {page} = route.queryParams;
     return this.movieService.getAll(page || 1);
   }
+
+
 
 }

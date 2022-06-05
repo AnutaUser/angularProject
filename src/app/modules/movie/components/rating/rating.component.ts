@@ -17,18 +17,12 @@ export class RatingComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.activatedRoute.data.subscribe(({data}) => {
-      const {results} = data;
+    this.activatedRoute.data.subscribe(({data: {results}}) => {
       this.movies = results;
       this.movies.map(movie => {
-        const popularity = movie.popularity * 0.001;
-        // console.log(movie.popularity)
-        const id = movie.id;
-        if (popularity) {
-
-          this.currentRate = popularity;
+          this.currentRate = movie.popularity * 0.001;
         }
-      })
+      )
 
     })
   }

@@ -9,13 +9,15 @@ import {HomeComponent} from "./components/home/home.component";
 import {CommonModule} from "@angular/common";
 import {AppRoutingModule} from "./app-routing.module";
 import {NgbAlertModule, NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainLayoutComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

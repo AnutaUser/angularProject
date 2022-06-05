@@ -1,10 +1,9 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
+import {MovieResolver, MoviesResolver} from "./services";
 import {MoviesComponent} from "./components/movies/movies.component";
-import {MoviesResolver} from "./services/resolvers/movies.resolver";
 import {MovieDetailsComponent} from "./components/movie-details/movie-details.component";
-import {MovieResolver} from "./services/resolvers/movie.resolver";
 
 const routes: Routes = [
   {
